@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - BoysAtTheBack</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* SUCCESS MESSAGE */
+
+        .success-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .success-box {
+            background: white;
+            padding: 35px;
+            width: 320px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .success-icon {
+            background: #42b72a;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 40px;
+            line-height: 60px;
+            margin: 0 auto 15px;
+        }
+
+        .success-box h2 {
+            color: #071936;
+            font-size: 22px;
+        }
+
+        .success-box p {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body class="register-page">
+
+    <div class="register-box">
+
+        <h1>BoysAtTheBack</h1>
+       
+
+        <hr>
+
+        <!-- REGISTRATION FORM -->
+
+        <form id="registerForm">
+
+            <div class="name-fields">
+                <input type="text" id="firstName"
+                    placeholder="First Name" required>
+
+                <input type="text" id="lastName"
+                    placeholder="Last Name" required>
+            </div>
+
+            <input type="email" id="email"
+                placeholder="Email Address" required>
+
+            <input type="password" id="password"
+                placeholder="New Password" minlength="6" required>
+
+            <input type="password" id="confirmPassword"
+                placeholder="Confirm Password" required>
+
+            <label>Date of Birth</label>
+            <input type="date" id="birthdate" required>
+
+            <label>Gender</label>
+            <select id="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+               
+            </select>
+
+            <button type="submit">Create Account</button>
+
+        </form>
+
+        <a href="login.html" class="already-account">
+            Already have an account? Login
+        </a>
+
+    </div>
+
+    <!-- SUCCESS MESSAGE -->
+
+    <div id="successMessage" class="success-overlay">
+        <div class="success-box">
+            <div class="success-icon">✓</div>
+            <h2>Successfully Created!</h2>
+            <p>Your account has been created successfully.</p>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>

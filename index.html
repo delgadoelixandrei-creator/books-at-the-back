@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoysAtTheBack Bookstore</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <h2>BooksAtTheBack</h2>
+
+        <nav>
+            <a href="index.html">
+                <i class="fas fa-house"></i> Home
+            </a>
+
+            <a href="#books">
+                <i class="fas fa-book"></i> Browse Books
+            </a>
+
+            <a href="orders.html">
+                <i class="fas fa-shopping-cart"></i>
+                Orders <span id="orderCount">0</span>
+            </a>
+
+            <a href="about.html">
+                <i class="fas fa-circle-info"></i> About
+            </a>
+        </nav>
+
+        <a href="login.html" class="login-btn">Login</a>
+    </header>
+
+
+    <!-- HOMEPAGE BANNER -->
+    <section class="hero" id="home">
+
+        <h1>BooksAtTheBack</h1>
+        <h3>Buy. Read. Repeat.</h3>
+
+        <p>
+            Find your next read. Browse, order, and enjoy books with ease.
+        </p>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for books..."
+        >
+
+        <button type="button" id="searchButton">
+            Search
+        </button>
+
+    </section>
+
+
+    <!-- SERVICES -->
+    <section class="services">
+        <div>Fast Delivery</div>
+        <div>Secure Checkout</div>
+        <div>24/7 Support</div>
+    </section>
+
+
+    <!-- FEATURED BOOKS -->
+    <section class="books" id="books">
+
+        <h2>Featured Books</h2>
+
+        <div class="book-container">
+
+            <!-- BOOK 1 -->
+            <div class="book">
+
+                <img
+                    src="images/shopping.webp"
+                    alt="C and C++ Programming"
+                >
+
+                <h3>C and C++ Programming</h3>
+                <p>Dr. Jerry A. Smith</p>
+                <h3>₱4,549.09</h3>
+
+                <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-title="C and C++ Programming"
+                    data-author="Dr. Jerry A. Smith"
+                    data-price="4549.09"
+                    data-image="images/shopping.webp">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- BOOK 2 -->
+            <div class="book">
+
+                <img
+                    src="images/shopping (1).webp"
+                    alt="Hands-On Bitcoin Programming with Python"
+                >
+
+                <h3>Hands-On Bitcoin Programming with Python</h3>
+                <p>Harish Kumar Garg</p>
+                <h3>₱857.90</h3>
+
+                <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-title="Hands-On Bitcoin Programming with Python"
+                    data-author="Harish Kumar Garg"
+                    data-price="857.90"
+                    data-image="images/shopping (1).webp">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- BOOK 3 -->
+            <div class="book">
+
+                <img
+                    src="images/shopping (2).webp"
+                    alt="Java Programs to Accompany Programming Logic and Design"
+                >
+
+                <h3>Java Programs to Accompany Programming Logic and Design</h3>
+                <p>Jo Ann Smith</p>
+                <h3>₱959.63</h3>
+
+                <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-title="Java Programs to Accompany Programming Logic and Design"
+                    data-author="Jo Ann Smith"
+                    data-price="959.63"
+                    data-image="images/shopping (2).webp">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- BOOK 4 -->
+            <div class="book">
+
+                <img
+                    src="images/shopping (3).webp"
+                    alt="Programming Microcontrollers with Python"
+                >
+
+                <h3>Programming Microcontrollers with Python</h3>
+                <p>Armstrong Subero</p>
+                <h3>₱2,621.22</h3>
+
+                <button
+                    type="button"
+                    class="add-cart-btn"
+                    data-title="Programming Microcontrollers with Python"
+                    data-author="Armstrong Subero"
+                    data-price="2621.22"
+                    data-image="images/shopping (3).webp">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>BooksAtTheBack</h2>
+        <p>Books make a better tomorrow.</p>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
